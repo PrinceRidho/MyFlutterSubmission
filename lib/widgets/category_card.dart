@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nyari_1/model/category.dart';
+import 'package:nyari_1/pages/category_page.dart';
 import 'package:nyari_1/theme.dart';
 
 class CategoryCard extends StatelessWidget {
@@ -10,7 +11,12 @@ class CategoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => CategoryPage()),
+        );
+      },
       child: Column(
         children: [
           Container(
