@@ -6,7 +6,7 @@ import 'package:nyari_1/theme.dart';
 import 'package:nyari_1/widgets/ads_card.dart';
 import 'package:nyari_1/widgets/category_card.dart';
 
-import '../widgets/unggulan_card.dart';
+import '../widgets/superior_card.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -162,9 +162,9 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 32),
-                  UnggulanCard(),
+                  SuperiorCard(),
                   SizedBox(height: edge),
-                  UnggulanCard(),
+                  SuperiorCard(),
                   SizedBox(height: edge),
                 ],
               ),

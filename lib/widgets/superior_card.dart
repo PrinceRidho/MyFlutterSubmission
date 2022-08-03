@@ -4,7 +4,7 @@ import 'package:nyari_1/pages/splash_page.dart';
 
 import '../theme.dart';
 
-class UnggulanCard extends StatelessWidget {
+class SuperiorCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
