@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:nyari_1/pages/detail_page.dart';
-import 'package:nyari_1/pages/splash_page.dart';
 
 import '../theme.dart';
 
