@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "730001571790",
+    "project_id": "nusantara-app-530ef",
+    "storage_bucket": "nusantara-app-530ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730001571790:android:b24966e297144c4e9eb59f",
+        "android_client_info": {
+          "package_name": "com.example.nyari_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730001571790-d0ovjgkhggfnksjf6bpk60qnk4ir0q7h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdY3iv8FFW6YmYC04QZuDowwvRZCG5nbk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730001571790-d0ovjgkhggfnksjf6bpk60qnk4ir0q7h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

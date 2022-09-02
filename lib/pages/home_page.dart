@@ -2,8 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:nyari_1/model/ads.dart';
 import 'package:nyari_1/model/category.dart';
+import 'package:nyari_1/pages/search_page.dart';
 import 'package:nyari_1/theme.dart';
 import 'package:nyari_1/widgets/ads_card.dart';
+import 'package:nyari_1/widgets/bestproduct_card.dart';
 import 'package:nyari_1/widgets/category_card.dart';
 
 import '../widgets/superior_card.dart';
@@ -23,7 +25,7 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Halo!',
+                    'Halo, User!',
                     style: purpleTextStyle.copyWith(
                         fontSize: 18, fontWeight: FontWeight.bold),
                   ),
@@ -34,6 +36,42 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
+            // ====================================
+            // NOTE : SEARCH BAR
+            // ====================================
+            SizedBox(height: 26),
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SearchPage()),
+                );
+              },
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: edge),
+                child: Container(
+                  height: 50,
+                  decoration: BoxDecoration(
+                    color: Color(0xffFAFAFA),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            'Cari nama produk',
+                            style: greyTextStyle.copyWith(fontSize: 15),
+                          ),
+                          Image.asset('assets/icon_search.png',
+                              height: 24, width: 24),
+                        ]),
+                  ),
+                ),
+              ),
+            ),
+
 //=========================================
 // NOTE : ADS CARD
 // ========================================
@@ -130,6 +168,9 @@ class HomePage extends StatelessWidget {
               ),
             ),
             SizedBox(height: 25),
+            // ================================
+            // PRODUK UNGGULAN CARD
+            // ================================
             Container(
               decoration: BoxDecoration(
                 color: Color(0xffFAFAFA),
@@ -165,6 +206,98 @@ class HomePage extends StatelessWidget {
                   SuperiorCard(),
                   SizedBox(height: edge),
                   SuperiorCard(),
+                  SizedBox(height: edge),
+                ],
+              ),
+            ),
+// ======================
+// ADS NGAJENG
+// =======================
+            SizedBox(height: 32),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: edge),
+              child: Container(
+                height: 141,
+                decoration: BoxDecoration(
+                  color: Color(0xffEFF5FB),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Ngajeng',
+                          style: blackTextStyle.copyWith(
+                              fontSize: 18, fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(height: 4),
+                        Text(
+                          'Kursi santai yang dibuat dari\nbambu petung',
+                          style: greyTextStyle.copyWith(fontSize: 10),
+                        ),
+                        SizedBox(height: 4),
+                        Row(
+                          children: [
+                            Text(
+                              'Belanja sekarang',
+                              style: greyTextStyle.copyWith(
+                                  fontSize: 10, fontWeight: FontWeight.bold),
+                            ),
+                            Image.asset('assets/icon_right.png',
+                                width: 15, height: 15),
+                          ],
+                        ),
+                      ],
+                    ),
+                    Image.asset('assets/img_ngajeng.png',
+                        width: 150, height: 140),
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(height: 43),
+//=========================
+// NOTE : PENJUALAN TERBAIK
+//=========================
+            Container(
+              decoration: BoxDecoration(
+                color: Color(0xffFAFAFA),
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(10),
+                  topRight: Radius.circular(10),
+                ),
+              ),
+              child: Column(
+                children: [
+                  SizedBox(height: 12),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: edge),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Penjualan Terbaik',
+                          style: blackTextStyle.copyWith(
+                              fontSize: 16, fontWeight: FontWeight.w300),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            'Lihat Semua',
+                            style: purpleTextStyle.copyWith(fontSize: 16),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 32),
+                  BestProduct(),
+                  SizedBox(height: edge),
+                  BestProduct(),
                   SizedBox(height: edge),
                 ],
               ),
