@@ -31,7 +31,7 @@ class BestProduct extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  Image.asset('assets/img_product1.png', width: 150),
+                  Image.asset('assets/img_bestproduct1.png', width: 150),
                   SizedBox(height: 6),
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 16),
@@ -39,18 +39,18 @@ class BestProduct extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Sedan',
+                          'Tiwi',
                           style: blackTextStyle,
                         ),
                         SizedBox(height: 6),
                         Text(
-                          'Rp 5.280.000,00',
+                          'Rp 3.920.000,00',
                           style: blackTextStyle.copyWith(
                               fontWeight: FontWeight.bold),
                         ),
                         Text.rich(
                           TextSpan(
-                            text: 'Rp 5.280.000,00',
+                            text: 'Rp 4.620.000,00',
                             style: greyTextStyle.copyWith(
                                 fontSize: 10,
                                 fontWeight: FontWeight.normal,
@@ -97,7 +97,7 @@ class BestProduct extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  Image.asset('assets/img_product2.png', width: 150),
+                  Image.asset('assets/img_bestproduct2.png', width: 150),
                   SizedBox(height: 6),
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 16),
@@ -105,18 +105,18 @@ class BestProduct extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Singgah',
+                          'Jengkih',
                           style: blackTextStyle,
                         ),
                         SizedBox(height: 6),
                         Text(
-                          'Rp 4.090.000,00',
+                          'Rp 3.060.000,00',
                           style: blackTextStyle.copyWith(
                               fontWeight: FontWeight.bold),
                         ),
                         Text.rich(
                           TextSpan(
-                            text: 'Rp 5.280.000,00',
+                            text: 'Rp 4.620.000,00',
                             style: greyTextStyle.copyWith(
                                 fontSize: 10,
                                 fontWeight: FontWeight.normal,
