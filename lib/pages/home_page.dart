@@ -7,7 +7,6 @@ import 'package:nyari_1/theme.dart';
 import 'package:nyari_1/widgets/ads_card.dart';
 import 'package:nyari_1/widgets/bestproduct_card.dart';
 import 'package:nyari_1/widgets/category_card.dart';
-
 import '../widgets/superior_card.dart';
 
 class HomePage extends StatelessWidget {
